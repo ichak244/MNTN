@@ -355,4 +355,107 @@ header nav ul li a:active {
         align-items: center;
         gap: 1.5rem;
     }
+
+
+
+
+    .first-sectionMiddle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first-sectionMiddle p {
+        font-size: 13px;
+        position: relative;
+        color: var(--yellow);
+        font-family: 'GilroyBold';
+        letter-spacing: 6px;
+        align-self: center;
+        right: 0;
+    }
+
+    .first-sectionMiddle p::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: -4rem;
+        transform: translate(-50%, -50%);
+        background: currentColor;
+        height: 2px;
+        width: 30%;
+    }
+
+
+    .first-sectionMiddle h1 {
+        font-size: 3.78rem;
+        max-width: 40rem;
+        letter-spacing: -0.02em;
+        margin: 0;
+    }
+
+
+    .first-sectionMiddle a {
+        display: flex;
+        align-items: center;
+        transition: color 0.6s ease;
+        padding-top: 1rem;
+    }
+
+    .first-sectionMiddle a:hover {
+        color: var(--yellow);
+    }
+
+
+    .first-sectionMiddle a:active {
+        box-shadow: none !important;
+        opacity: 0.7;
+    }
+
+    .first-sectionMiddle a:focus {
+        box-shadow: none !important;
+    }
+
+    .first-sectionMiddle a span {
+        font-size: 15px;
+        font-family: 'GilroyBold';
+    }
+
+
+
+
+    .counter {
+        transform: translateX(0);
+    }
+
+    .counter-Alltext h3 {
+        font-family: inherit;
+        font-size: 1rem;
+        letter-spacing: -0.015em;
+    }
+
+    .counter-AlltextNumbers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .counter-AlltextNumbers p,
+    .counter-Alltext h3 {
+        border-radius: 0;
+    }
+
+    .counter-line {
+        background-color: var(--white);
+        height: 17rem;
+        width: 3px;
+    }
+
+    .first-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7rem;
+        padding-inline: 2rem;
+    }
 }
