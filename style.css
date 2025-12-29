@@ -251,8 +251,8 @@ header nav ul li a:active {
 }
 
 .first-sectionMiddle a span {
-    font-size: 15px;
-    font-family: 'GilroyBold';
+    font-size: 17px;
+    font-family: 'GilroyExtraBold';
 }
 
 
@@ -292,7 +292,7 @@ header nav ul li a:active {
 }
 
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .aBurger-svg {
         display: block;
     }
@@ -366,13 +366,8 @@ header nav ul li a:active {
     }
 
     .first-sectionMiddle p {
-        font-size: 13px;
+        font-size: 10px;
         position: relative;
-        color: var(--yellow);
-        font-family: 'GilroyBold';
-        letter-spacing: 6px;
-        align-self: center;
-        right: 0;
     }
 
     .first-sectionMiddle p::before {
@@ -382,7 +377,6 @@ header nav ul li a:active {
         bottom: 50%;
         left: -4rem;
         transform: translate(-50%, -50%);
-        background: currentColor;
         height: 2px;
         width: 30%;
     }
@@ -457,5 +451,27 @@ header nav ul li a:active {
         align-items: center;
         margin-top: 7rem;
         padding-inline: 2rem;
+    }
+}
+
+
+@media(max-width:480px) {
+    .first-sectionMiddle p {
+        position: relative;
+        left: 10%;
+    }
+
+    .headerAndFistSection {
+        height: 700px;
+        width: 100%;
+    }
+
+    .headerAndFistSection>img {
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        height: 700px;
     }
 }
